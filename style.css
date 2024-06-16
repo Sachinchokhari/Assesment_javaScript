@@ -1,0 +1,56 @@
+* {
+    background-color: black;
+}
+.slider {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+  
+}
+.main-image {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+.thumbnails-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.thumbnails {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.thumbnail {
+    margin: 0 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.thumbnail.active {
+    opacity: 1;
+}
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.prev {
+    left: -30px;
+}
+.next {
+    right: -30px;
+}
